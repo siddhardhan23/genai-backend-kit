@@ -1,5 +1,0 @@
-fastapi 0.115.12
-uvicorn 0.34.2
-httpx==0.28.1
-pydantic==2.11.3
-python-dotenv==1.1.0
