@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Depends
-from app.api.deps.auth import verify_api_key
+from fastapi import APIRouter
+from app.logger import logger
 
 router = APIRouter()
 
-@router.get("/health", tags=["Health"], dependencies=[Depends(verify_api_key)])
+@router.get("/health", tags=["Health"])
 async def health_check():
+    logger.info("Health check endpoint called.")
     return {"status": "ok"}
