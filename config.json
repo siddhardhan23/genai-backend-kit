@@ -1,0 +1,24 @@
+{
+    "llm": {
+        "Groq": [
+          "gemma2-9b-it",
+          "llama-3.3-70b-versatile",
+          "llama-3.1-8b-instant"
+        ],
+        "Ollama": [
+          "gemma:2b",
+          "deepseek-r1:1.5b",
+          "phi:latest"
+        ],
+        "Openai": [
+            "gpt-4.1-nano-2025-04-14",
+            "gpt-4.1-mini-2025-04-14",
+            "o4-mini-2025-04-16",
+            "o3-mini-2025-01-31"
+        ]
+    },
+  "api": {
+    "host": "localhost",
+    "port": 8000
+  }
+}
