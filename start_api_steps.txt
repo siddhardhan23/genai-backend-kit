@@ -1,0 +1,6 @@
+pip install -r requirements.txt
+
+
+create .env file & add api keys
+
+run main.py
