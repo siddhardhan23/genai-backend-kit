@@ -1,5 +1,5 @@
 import os
-from app.config import app_config, env_config
+from utils.config import app_config, env_config
 
 # prints the config.json content
 print(app_config)

@@ -1,7 +1,6 @@
-import logging
+from utils.logger import logger
 from app.llm.llm_factory import load_llm
 
-logger = logging.getLogger(__name__)
 
 def get_answer(provider, model, question):
     logger.info(f"Received request for answer generation. Provider: {provider}, Model: {model}, Question: {question}")

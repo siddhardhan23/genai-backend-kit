@@ -1,4 +1,4 @@
-from app.config import app_config
+from utils.config import app_config
 
 def fetch_llm_options():
     llm_config = app_config["llm"]
