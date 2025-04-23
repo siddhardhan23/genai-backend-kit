@@ -1,7 +1,7 @@
 from langchain_groq import ChatGroq
 from langchain_ollama import ChatOllama
 from langchain_openai import ChatOpenAI
-from app.logger import logger
+from utils.logger import logger
 
 def load_llm(provider, model):
     logger.info("Loading LLM | Provider: %s | Model: %s", provider, model)

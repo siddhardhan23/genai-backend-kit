@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 from app.api.deps.auth import verify_api_key
 from app.services.qa_service import get_answer
-from app.logger import logger
+from utils.logger import logger
 
 router = APIRouter()
 

@@ -1,7 +1,6 @@
-import os
-from fastapi import Header, HTTPException, Depends
-from app.config import env_config
-from app.logger import logger
+from fastapi import Header, HTTPException
+from utils.config import env_config
+from utils.logger import logger
 
 async def verify_api_key(api_key: str = Header(...)):
     if api_key != env_config.APP_API_KEY:

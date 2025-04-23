@@ -4,7 +4,7 @@ load_dotenv()
 from pathlib import Path
 import json
 from pydantic_settings import BaseSettings
-from app.logger import logger
+from utils.logger import logger
 
 # Path to config.json in project root
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config.json"

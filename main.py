@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import routes as api_routes
-from app.config import app_config
-from app.logger import logger
+from utils.config import app_config
+from utils.logger import logger
 import uvicorn
 
 app = FastAPI(title="LLM API")

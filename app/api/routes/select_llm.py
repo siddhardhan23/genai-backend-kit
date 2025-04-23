@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from pydantic import BaseModel
-from typing import Dict, List
+from typing import List
 from app.api.deps.auth import verify_api_key
 from app.services.llm_options import fetch_llm_options
-from app.logger import logger
+from utils.logger import logger
 
 router = APIRouter()
 
